@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailySpend Forecasting - Madhav Gupta</title>
+    <meta name="description" content="DailySpend Forecasting - Financial ML model for transaction prediction by Madhav Gupta">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">Madhav Gupta</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project Detail Section -->
+    <section class="section">
+        <div class="container">
+            <a href="index.html#projects" class="project-link" style="margin-bottom: 2rem; display: inline-block;">← Back to Projects</a>
+            
+            <h1 class="hero-title" style="text-align: left; margin-bottom: 1rem;">DailySpend Forecasting</h1>
+            <p class="hero-subtitle" style="text-align: left; margin-bottom: 2rem;">Financial Forecasting Model for Transaction Prediction</p>
+            
+            <div class="project-tags" style="margin-bottom: 3rem;">
+                <span class="tag">LSTM</span>
+                <span class="tag">XGBoost</span>
+                <span class="tag">FinTech</span>
+                <span class="tag">Time Series</span>
+                <span class="tag">Python</span>
+            </div>
+
+            <div style="max-width: 800px;">
+                <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Overview</h2>
+                <p style="color: var(--color-text); margin-bottom: 2rem; line-height: 1.8;">
+                    DailySpend Forecasting is a machine learning solution for predicting daily transaction amounts in financial systems. 
+                    The project combines deep learning (LSTM) with gradient boosting (XGBoost) to create a robust hybrid forecasting 
+                    model. By analyzing historical transaction patterns, the model provides accurate predictions that can help with 
+                    budget planning, fraud detection, and cash flow management.
+                </p>
+
+                <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Key Achievements</h2>
+                <ul class="experience-achievements" style="margin-bottom: 2rem;">
+                    <li><span class="bullet">▸</span> Built hybrid LSTM + XGBoost pipeline for daily transaction forecasting with ensemble approach</li>
+                    <li><span class="bullet">▸</span> Engineered features using rolling windows, category aggregates, and transaction embeddings</li>
+                    <li><span class="bullet">▸</span> Optimized models through hyperparameter tuning with grid search and k-fold cross-validation</li>
+                    <li><span class="bullet">▸</span> Achieved RMSE of 0.75 and MAPE of 3%, demonstrating high prediction accuracy</li>
+                </ul>
+
+                <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Technical Implementation</h2>
+                <p style="color: var(--color-text); margin-bottom: 1rem; line-height: 1.8;">
+                    <strong>LSTM Model:</strong> Implemented Long Short-Term Memory network to capture temporal dependencies 
+                    and sequential patterns in transaction history. The LSTM layer learns long-term trends and seasonal patterns 
+                    in spending behavior.
+                </p>
+                <p style="color: var(--color-text); margin-bottom: 1rem; line-height: 1.8;">
+                    <strong>XGBoost Enhancement:</strong> Integrated gradient boosting to handle non-linear relationships and 
+                    categorical features. XGBoost provides robustness against outliers and captures complex interaction effects 
+                    between features.
+                </p>
+                <p style="color: var(--color-text); margin-bottom: 1rem; line-height: 1.8;">
+                    <strong>Feature Engineering:</strong> Created comprehensive feature set including rolling window statistics 
+                    (7-day, 30-day averages), day-of-week patterns, category-level aggregations, and transaction embeddings 
+                    to represent merchant and transaction type information.
+                </p>
+                <p style="color: var(--color-text); margin-bottom: 2rem; line-height: 1.8;">
+                    <strong>Model Optimization:</strong> Performed extensive hyperparameter tuning using grid search with 
+                    cross-validation. Evaluated multiple configurations to optimize learning rate, network depth, number of 
+                    estimators, and regularization parameters for best generalization performance.
+                </p>
+
+                <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Results & Impact</h2>
+                <p style="color: var(--color-text); margin-bottom: 1rem; line-height: 1.8;">
+                    The model achieved strong predictive performance with an RMSE of 0.75 and MAPE of 3%, indicating high accuracy 
+                    in transaction forecasting. These metrics demonstrate the model's practical applicability for financial planning 
+                    and budgeting systems.
+                </p>
+                <p style="color: var(--color-text); margin-bottom: 2rem; line-height: 1.8;">
+                    The hybrid approach leverages the strengths of both deep learning and tree-based methods, providing robust 
+                    predictions across different transaction patterns and edge cases. The model's accuracy makes it suitable 
+                    for real-world FinTech applications including personal finance apps, banking systems, and expense management 
+                    platforms.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Madhav Gupta. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
