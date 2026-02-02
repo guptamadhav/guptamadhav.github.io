@@ -3,136 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madhav Gupta — guptamadhav.github.io</title>
-    <meta name="description" content="Madhav Gupta — ML Engineer. Computer Vision, Foundation Models, LLMs & SLMs. Featured: Wallet (credit card recommendation + spend forecasting).">
+    <title>Madhav Gupta — ML, AI, Data Science &amp; Data Analytics</title>
+    <meta name="description" content="Madhav Gupta — ML, AI, Data Science & Data Analytics. BSc AI @ UAlberta. Wallet (credit card co-pilot), PULSEMedica, HauteSync, Rehab Robotics. Pipelines, models, and stakeholder-facing reports.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="topbar">
         <div class="topbar-inner">
-            <span class="name">Madhav Gupta</span>
+            <a href="#" class="name">Madhav Gupta</a>
             <nav class="nav">
                 <a href="#featured">Featured</a>
+                <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
+                <a href="#soft-skills">Collaboration</a>
                 <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
         <section class="hero">
-            <h1 class="name">Madhav Gupta</h1>
-            <p class="tagline">ML Engineer · Computer Vision, Foundation Models, LLMs &amp; SLMs</p>
-            <p class="contact">
-                madhav3@ualberta.ca · 780-263-9810 ·
+            <h1 class="hero-name">Madhav Gupta</h1>
+            <p class="hero-tagline">Machine Learning · AI · Data Science · Data Analytics</p>
+            <p class="hero-seeking">Seeking internships in <strong>ML</strong>, <strong>AI</strong>, <strong>Data Science</strong>, and <strong>Data Analytics</strong></p>
+            <p class="hero-contact">
+                <a href="mailto:madhav3@ualberta.ca">madhav3@ualberta.ca</a> · 780-263-9810 ·
                 <a href="https://linkedin.com/in/guptamadhav75" target="_blank" rel="noopener">LinkedIn</a> ·
                 <a href="https://github.com/guptamadhav" target="_blank" rel="noopener">GitHub</a>
             </p>
         </section>
 
-        <section id="featured" class="section featured">
+        <section id="featured" class="section featured-project">
             <h2 class="section-title">Featured project</h2>
-            <div class="entry">
-                <div class="entry-title">Wallet — Credit card recommendation &amp; spend forecasting</div>
-                <div class="entry-meta">Feb 2025 – Present · SLMs, PostgreSQL, time-series, feature engineering</div>
-                <ul class="entry-list">
-                    <li>Hybrid system: small language models for intent extraction and reasoning, PostgreSQL for reward rules, caps, and merchant logic. Privacy-first (user data in-VPC).</li>
-                    <li>Fine-tuned SLM for credit card recommendations over multi-bank datasets; building time-series models for weekly spending prediction and budgeting.</li>
-                    <li>Data cleaning, feature engineering, and evaluation on real-world financial data; schema supports complex cap logic and pgvector for offer matching.</li>
-                </ul>
-                <a href="project-dailyspend.html" class="project-link-featured">View project →</a>
+            <div class="featured-project-inner">
+                <h3 class="featured-project-name">Wallet</h3>
+                <p class="featured-project-one-liner">Personal credit card co-pilot for Canadians. You add your cards; Wallet tells you which one to use and why—by merchant and category—so you always get the best rewards from the cards you already have.</p>
+                <p class="featured-project-detail">Runs fully on your device. It ingests reward data from six major Canadian banks (RBC, TD, CIBC, Scotiabank, BMO, ATB): 100+ cards, 900+ multiplier entries, 40+ merchants, 30+ MCC codes, 36+ partner programs. A small language model runs locally and is fine-tuned on 1,000+ queries to explain recommendations in short, clear language. PostgreSQL holds static card and reward data; a vector DB pulls in new offers. You can tilt recommendations (e.g. airline miles vs cashback). In progress: a 7-day cash-flow forecast using your transaction history and synthetic data for R&amp;D. Started in the Edmonton Unlimited Student Founder's program; preparing for production.</p>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7422186949089759233/" target="_blank" rel="noopener" class="featured-project-link">More on LinkedIn →</a>
             </div>
+        </section>
+
+        <section id="about" class="section about">
+            <h2 class="section-title">About</h2>
+            <p class="about-lead">I build pipelines and models from raw data through to APIs and reports that stakeholders can use. I care about correctness, reproducibility, and clear documentation.</p>
+            <p class="about-p">BSc Computer Science (AI) at the University of Alberta. I've worked on medical imaging pipelines and segmentation (PULSEMedica), virtual try-on and body measurement (HauteSync), and clinical iris segmentation (Rehab Robotics). I also build recommendation and analytics systems (Wallet, HandleIt) and work with non-technical stakeholders: scoping, documenting data contracts, and aligning deliverables with business goals.</p>
         </section>
 
         <section id="experience" class="section">
             <h2 class="section-title">Experience</h2>
-            <div class="entry">
-                <div class="entry-title">Machine Learning Engineer — AI Capstone</div>
-                <div class="entry-meta">PULSEMedica (Academic-Industry Collaboration) · Jan 2026 – Present · Edmonton, AB</div>
+
+            <article class="entry">
+                <div class="entry-head">
+                    <span class="entry-title">Machine Learning Engineer — AI Capstone</span>
+                    <span class="entry-date">Jan 2026 – Present</span>
+                </div>
+                <div class="entry-meta">PULSEMedica · Edmonton, AB · 20 hrs/week</div>
                 <ul class="entry-list">
-                    <li>Designed and implemented real-time ingestion pipelines for 30 FPS SLO medical video, enabling live analytics for vitreous floater tracking.</li>
-                    <li>Fine-tuned DINOv3 foundation models using custom adapters to improve medical image localization and segmentation performance (high IoU targets).</li>
-                    <li>Applied unsupervised PCA on foundation-model embeddings to extract discriminative features from unlabeled retinal datasets.</li>
-                    <li>Optimized neural network architectures for low-latency inference, benchmarking performance against real-time clinical deployment constraints.</li>
+                    <li>ETL-style preprocessing for 12,000+ SLO frames (512×512): extraction, normalization, quality filtering; schema and consistency checks so runs are repeatable.</li>
+                    <li>Benchmarked segmentation against clinician annotations (IoU/Dice); produced overlays and reports for progress and stakeholder review.</li>
+                    <li>Self-supervised segmentation in progress: frozen DINOv3 plus PCA and clustering adapters to cut manual labeling; offline pipeline targeting 30 FPS for eye-floater tracking.</li>
+                    <li>Reusable notebooks and scripts; documented edge cases so technical and non-technical teammates can rerun and hand off.</li>
                 </ul>
-            </div>
-            <div class="entry">
-                <div class="entry-title">Founding AI Engineer</div>
-                <div class="entry-meta">HauteSync · Oct 2025 – Jan 2026 · Edmonton, AB</div>
+            </article>
+
+            <article class="entry">
+                <div class="entry-head">
+                    <span class="entry-title">Founding AI Engineer</span>
+                    <span class="entry-date">Oct 2025 – Jan 2026</span>
+                </div>
+                <div class="entry-meta">HauteSync · Edmonton, AB · Casual, 10 hrs/week</div>
                 <ul class="entry-list">
-                    <li>Led development of an AI-powered virtual try-on stack targeting reduced fashion returns: 2D try-on plus 3D avatar generation for garment visualization.</li>
-                    <li>Built body measurement pipeline using SAM 3D Body for single-image full-body mesh recovery, MediaPipe for pose/keypoints, and DeepLabV3-ResNet50 for person segmentation; integrated SMPL and custom landmark mapping for size inference.</li>
-                    <li>Implemented 3D avatar pipeline: FaceVerse V4 for single-image 3D face reconstruction (ResNet50 → 621-D params, Sim3DR rendering), body meshes from SAM 3D Body and InstantMesh/Human3Diffusion; custom face–body stitching with MediaPipe neck alignment, skin transfer, and 3D clothing projection (OBJ/PLY).</li>
-                    <li>Built 2D fashion-mannequin generation using Google Vertex AI (Gemini/Imagen) with identity-preserving, A-pose prompts for virtual try-on.</li>
-                    <li>Hardened ML services with automated fallbacks and backup models; deployed on Docker and RunPod for GPU inference.</li>
+                    <li>Scoped virtual try-on workflow (goal: 30–40% return-rate reduction); worked with non-technical founder on requirements, success metrics, and tradeoffs.</li>
+                    <li>Single-image body measurement pipeline: 89% accuracy across 50 users (MediaPipe, SAM3D, DINOv3); prompt and evaluation setup for identity preservation and anatomical correctness.</li>
+                    <li>Evaluated Vertex AI try-on, Gemini avatars, Meshy.ai 3D; benchmarked try-on stacks on Docker and RunPod GPUs and summarized trade-offs for decisions.</li>
                 </ul>
-            </div>
-            <div class="entry">
-                <div class="entry-title">Artificial Intelligence Research Assistant</div>
-                <div class="entry-meta">Rehabilitation Robotics Laboratory · May 2025 – Aug 2025 · Edmonton, AB</div>
+            </article>
+
+            <article class="entry">
+                <div class="entry-head">
+                    <span class="entry-title">Artificial Intelligence Research Assistant</span>
+                    <span class="entry-date">May 2025 – Aug 2025</span>
+                </div>
+                <div class="entry-meta">Rehabilitation Robotics Laboratory · Edmonton, AB · Full time</div>
                 <ul class="entry-list">
-                    <li>Developed a U-Net segmentation model for medical iris analysis, achieving a 93.6% Dice score for nystagmus detection in BPPV patients.</li>
-                    <li>Built scalable computer vision pipelines to extract iris position, eye-movement velocity, and ellipse parameters from video streams.</li>
-                    <li>Optimized inference and video processing pipelines, achieving a 3x speedup to real-time 30 FPS performance.</li>
-                    <li>Applied deep learning and CV techniques using PyTorch and OpenCV for healthcare research applications.</li>
-                    <li>Implemented research papers and custom models, addressing domain-specific challenges such as eye-blink artifacts.</li>
+                    <li>UNet-based iris segmentation: 93.6% Dice for nystagmus detection (BPPV); 512×512 video at 30 FPS.</li>
+                    <li>Post-processing with RANSAC ellipse fitting, OpenCV fallbacks, size/aspect checks; annotated videos and movement metrics for clinicians.</li>
+                    <li>Configurable CLI and docs so teammates could run and reproduce without ML setup.</li>
                 </ul>
-            </div>
+            </article>
         </section>
 
         <section id="projects" class="section">
             <h2 class="section-title">Projects</h2>
-            <div class="entry">
-                <div class="entry-title">Wallet · SLMs, Time-Series, Feature Engineering</div>
-                <div class="entry-meta">Feb 2025 – Present · <a href="#featured">Featured above</a></div>
-                <ul class="entry-list">
-                    <li>Credit card recommendation via SLM + PostgreSQL; time-series forecasting for spending; privacy-first design.</li>
-                </ul>
-                <a href="project-dailyspend.html">project-dailyspend.html</a>
-            </div>
-            <div class="entry">
-                <div class="entry-title">HandleIt (Luante Labs) · YOLO, MediaPipe, FastAPI, Healthcare Analytics</div>
-                <div class="entry-meta">Jan 2025 – Aug 2025</div>
-                <ul class="entry-list">
-                    <li>Scaled a computer vision–based motor-decline tracking platform from hackathon prototype to funded pilot, securing $5K+ and finalist placements in SPARK 2025 and CAHBI 2025.</li>
-                    <li>Built backend computer vision pipelines to track elderly daily activities and generate AI-assisted treatment insights for long-term care environments.</li>
-                </ul>
-                <a href="project-handleit.html">project-handleit.html</a>
-            </div>
+
+            <article class="entry entry-featured">
+                <div class="entry-head">
+                    <span class="entry-title">Wallet — Personal credit card co-pilot</span>
+                    <span class="entry-date">Feb 2025 – Present</span>
+                </div>
+                <div class="entry-meta">Python, SQL, PostgreSQL, pgvector, local SLM, time-series (in progress)</div>
+                <p class="entry-desc">Privacy-first: add your cards; Wallet ranks them by merchant/category and explains which to use and why. Multi-bank rewards model (6 banks, 100+ cards, 900+ multiplier entries, 40+ merchants); constraint-aware ranking and sub-second retrieval. Local SLM fine-tuned on 1,000+ queries for short explanations; vector DB for offers. Context layer lets you bias toward miles, points, or cashback. In progress: 7-day cash-flow forecast from transaction history; R&amp;D on synthetic data and modeling choices. Edmonton Unlimited Student Founder's program.</p>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7422186949089759233/" target="_blank" rel="noopener" class="project-link">More on LinkedIn →</a>
+            </article>
+
+            <article class="entry">
+                <div class="entry-head">
+                    <span class="entry-title">HandleIt (Lunate Labs) — Motor-decline tracking</span>
+                    <span class="entry-date">Aug 2025 – Jan 2026</span>
+                </div>
+                <div class="entry-meta">YOLO, MediaPipe, FastAPI, Power BI/Excel</div>
+                <p class="entry-desc">Platform for tracking motor decline in long-term care. Went from prototype to funded pilot: $5K+ and finalist at SPARK 2025 and CAHBI 2025; Top 8 finalist for the WeCareforPatients Primary Care Pitch Challenge at Edmonton Startup Week (Oct 2025). Backend CV pipelines detect daily activities; signals exposed via FastAPI. Daily summaries and dashboards in Power BI/Excel for care teams. Worked with stakeholders on workflows and deliverables and presented demos and results.</p>
+                <a href="https://www.linkedin.com/posts/guptamadhav75_wecareforpatients-wecare4patients-yegsw25-activity-7374307242696908800-K3wy" target="_blank" rel="noopener" class="project-link">WeCareforPatients finalist post on LinkedIn →</a>
+            </article>
         </section>
 
         <section id="skills" class="section">
             <h2 class="section-title">Technical skills</h2>
-            <div class="skills-grid">
-                <div class="skills-line"><span class="label">Languages</span><span class="items">Python, SQL, R, Bash</span></div>
-                <div class="skills-line"><span class="label">Libraries & tools</span><span class="items">PyTorch, TensorFlow, OpenCV, Pandas, NumPy, Scikit-learn, Hugging Face, Matplotlib, Seaborn</span></div>
-                <div class="skills-line"><span class="label">Frameworks & cloud</span><span class="items">FastAPI, GCP, Vertex AI, AWS</span></div>
-                <div class="skills-line"><span class="label">Data & ML</span><span class="items">Vector DB, Snowflake, BigQuery, Airflow, MLflow, Docker</span></div>
-                <div class="skills-line"><span class="label">Developer tools</span><span class="items">Git, CI/CD, RunPod, Jupyter, VS Code, PyCharm</span></div>
+            <div class="skills-blocks">
+                <div class="skill-block">
+                    <h3 class="skill-block-title">Models &amp; inference</h3>
+                    <p>PyTorch, TensorFlow, scikit-learn, Hugging Face · Computer vision, segmentation, object detection (UNet, DINOv3) · IoU/Dice evaluation · PCA, clustering · Self-supervised setups · Time-series forecasting, feature engineering · Vertex AI, Ollama · LangChain, LangGraph · Prompt engineering, structured outputs · Embeddings, vector search (pgvector, Pinecone), RAG</p>
+                </div>
+                <div class="skill-block">
+                    <h3 class="skill-block-title">Data &amp; pipelines</h3>
+                    <p>ETL/ELT, cleaning, normalization, validation (schema checks, dedupe, mismatch detection) · Pandas, NumPy, Spark, PySpark · Statistical analysis, forecasting, data modeling · Rolling backtests</p>
+                </div>
+                <div class="skill-block">
+                    <h3 class="skill-block-title">Storage, APIs &amp; delivery</h3>
+                    <p>PostgreSQL, SQLite, MongoDB, pgvector · Power BI, Excel, PowerPoint · Dashboards, visualization · FastAPI, Docker, MLflow, Git, CI/CD, Jupyter · GCP, AWS</p>
+                </div>
             </div>
+            <div class="skills-tags">
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">R</span>
+                <span class="tag">Bash</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">MediaPipe</span>
+                <span class="tag">YOLO</span>
+            </div>
+        </section>
+
+        <section id="soft-skills" class="section soft-skills">
+            <h2 class="section-title">Collaboration</h2>
+            <p class="soft-intro">I work with non-technical founders, care teams, and clinicians: turning requirements into scope, documenting assumptions, and delivering results that support decisions.</p>
+            <ul class="soft-list">
+                <li><strong>Stakeholder communication</strong> — Demos, progress updates, and data-backed insights for business and clinical audiences; aligning deliverables with workflows and milestones.</li>
+                <li><strong>Requirements &amp; docs</strong> — Success metrics, data contracts, evaluation criteria; keeping docs updated so outputs stay consistent and reproducible.</li>
+                <li><strong>Reporting</strong> — Dashboards and summaries (Power BI/Excel) that non-technical teams can use for review and decisions.</li>
+                <li><strong>Handoffs</strong> — CLIs, runbooks, and notebooks so others can run, reproduce, and iterate without deep ML setup.</li>
+            </ul>
         </section>
 
         <section id="education" class="section">
             <h2 class="section-title">Education</h2>
-            <div class="entry">
+            <div class="entry education-entry">
                 <div class="entry-title">University of Alberta</div>
-                <div class="entry-meta">Bachelor of Science in Computer Science, Major in Artificial Intelligence · Edmonton, AB · Sep 2023 – Present</div>
+                <div class="education-degree">Bachelor of Science in Computer Science, Major in Artificial Intelligence · Sep 2023 – Present</div>
+                <div class="education-location">Edmonton, AB</div>
+                <p class="education-note">Seeking co-op/internships: 4, 8, 12, or 16 months starting May 2026</p>
             </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-p">
+                <a href="mailto:madhav3@ualberta.ca">madhav3@ualberta.ca</a> · 780-263-9810<br>
+                <a href="https://linkedin.com/in/guptamadhav75" target="_blank" rel="noopener">LinkedIn</a> ·
+                <a href="https://github.com/guptamadhav" target="_blank" rel="noopener">GitHub</a>
+            </p>
         </section>
     </main>
 
     <footer class="footer">
-        <a href="#featured">Featured</a> ·
-        <a href="#experience">Experience</a> ·
-        <a href="#projects">Projects</a> ·
-        <a href="#skills">Skills</a> ·
-        <a href="#education">Education</a><br>
-        &copy; 2025 Madhav Gupta
+        <nav class="footer-nav">
+            <a href="#featured">Featured</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#soft-skills">Collaboration</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <p>&copy; 2026 Madhav Gupta</p>
     </footer>
 </body>
 </html>
